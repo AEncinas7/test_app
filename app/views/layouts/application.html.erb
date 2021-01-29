@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <%= render 'shared/head' %>
+  </head>
+
+  <body>
+    <%= render 'shared/device_bootstrap_navbar' %>
+    <%= render 'shared/notices' %>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <%= render 'shared/bootstrap_footer' %>
+  </body>
+</html>

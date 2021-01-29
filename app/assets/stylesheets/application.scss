@@ -1,0 +1,25 @@
+// $navbar-default-bg: #312312;
+// $light-orange: #ff8c00;
+// $navbar-default-color: $light-orange;
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "components/index";
+@import "pages/index";
+
+// Commet the following lines if bootstrap IS NOT GOING TO BE USED:
+// -----------------------------------------------------------------------
+@import "bootstrap";
+// Fixes bootstrap nav-brand container overlap
+@include media-breakpoint-down(xs) {
+  .bootstrap-navbar-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+// -----------------------------------------------------------------------
+
+// Masquerade alert shouldn't have a bottom margin
+body > .alert {
+  margin-bottom: 0;
+}
